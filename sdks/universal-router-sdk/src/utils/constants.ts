@@ -9,6 +9,12 @@ type ChainConfig = {
 const WETH_NOT_SUPPORTED_ON_CHAIN = '0x0000000000000000000000000000000000000000'
 
 const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
+  //auroria
+  [205205]: {
+    router: '0xfcEeF4e799E4dC0FDa88cEdfE700d626f91D2da6',
+    weth: '0x7b7E6F779c497df2e9EAF8C311d44A296E4F316D',
+    creationBlock: 598001,
+  },
   // mainnet
   [1]: {
     router: '0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD',
@@ -134,7 +140,7 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+export const PERMIT2_ADDRESS = '0xd6A77B342771c3fcc0CF40B441533B94D6596C7c'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'

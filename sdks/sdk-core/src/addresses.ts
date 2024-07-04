@@ -35,7 +35,7 @@ export const UNISWAP_NFT_AIRDROP_CLAIM_ADDRESS = '0x8B799381ac40b838BBA4131ffB26
 /**
  * @deprecated use V2_FACTORY_ADDRESSES instead
  */
-export const V2_FACTORY_ADDRESS = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f'
+export const V2_FACTORY_ADDRESS = '0x5302086A3a25d473aAbBd0356eFf8Dd811a4d89B'
 export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.MAINNET]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
   [ChainId.GOERLI]: '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f',
@@ -48,6 +48,7 @@ export const V2_FACTORY_ADDRESSES: AddressMap = {
   [ChainId.POLYGON]: '0x9e5A52f57b3038F1B8EeE45F28b3C1967e22799C',
   [ChainId.CELO]: '0x79a530c8e2fA8748B7B40dd3629C0520c2cCf03f',
   [ChainId.BLAST]: '0x5C346464d33F90bABaf70dB6388507CC889C1070',
+  [ChainId.AURORIA]: '0x5302086A3a25d473aAbBd0356eFf8Dd811a4d89B',
 }
 /**
  * @deprecated use V2_ROUTER_ADDRESSES instead
@@ -130,6 +131,16 @@ const OPTIMISM_SEPOLIA_ADDRESSES: ChainAddresses = {
   nonfungiblePositionManagerAddress: '0xdA75cEf1C93078e8b736FCA5D5a30adb97C8957d',
   tickLensAddress: '0xCb7f54747F58F8944973cea5b8f4ac2209BadDC5',
   swapRouter02Address: '0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4',
+}
+
+const AURORIA_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x4B500Cd5f5ACAf613989E813791Ae14A3Da3081e',
+  multicallAddress: '0x4A0D9AAfA7C5646Bda5B5541F574fdB576761D78',
+  quoterAddress: '0x7ee8F28c3Bd78f61bC78dAf46CA36d271802A08B',
+  v3MigratorAddress: '0x6BB4d22E37Bf669adD454A562e43c42B9e7B77Ff',
+  nonfungiblePositionManagerAddress: '0x0ae996AE58c3df4837B1400e95FB5A1783644172',
+  // tickLensAddress: '0xCb7f54747F58F8944973cea5b8f4ac2209BadDC5',
+  // swapRouter02Address: '0xbe9B086AC217D8C00ba19e62101B321f1f3738C3',
 }
 
 // arbitrum goerli v3 addresses
@@ -269,6 +280,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.ROOTSTOCK]: ROOTSTOCK_ADDRESSES,
   [ChainId.BLAST]: BLAST_ADDRESSES,
   [ChainId.ZKSYNC]: ZKSYNC_ADDRESSES,
+  [ChainId.AURORIA]: AURORIA_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
