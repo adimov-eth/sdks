@@ -1,7 +1,8 @@
 {
   "name": "@uniswap/sdk-core",
+  "version": "3.4.0-auroria.1",
   "description": "⚒️ An SDK for building applications on top of Uniswap V3",
-  "repository": "https://github.com/Uniswap/sdks.git",
+  "repository": "https://github.com/adimov-eth/sdks.git",
   "keywords": [
     "uniswap",
     "ethereum"
@@ -21,7 +22,8 @@
     "lint": "tsdx lint src",
     "release": "semantic-release",
     "start": "tsdx watch",
-    "test": "tsdx test"
+    "test": "tsdx test",
+    "prepare": "yarn build"
   },
   "dependencies": {
     "@ethersproject/address": "^5.0.2",
