@@ -29,6 +29,10 @@ export class RouteV2<TInput extends Currency, TOutput extends Currency>
     super(v2Route.pairs, v2Route.input, v2Route.output)
     this.pools = this.pairs
   }
+
+  public get midPrice(): Price<TInput, TOutput> {
+    return super.midPrice as any as Price<TInput, TOutput>
+  }
 }
 
 // V3 route wrapper

@@ -15,6 +15,18 @@ const CHAIN_CONFIGS: { [key: number]: ChainConfig } = {
     weth: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
     creationBlock: 17143817,
   },
+  // stratis
+  [105105]: {
+    router: '0xEE87B4bFfCAB73622834cdAf6EC96Ab6EFad6D8d',
+    weth: '0xeA705D2DbD8DE7Dc70Db7B531D0F620d9CeE9d18',
+    creationBlock: 830902,
+  },
+  // stratis auroria
+  [205205]: {
+    router: '0xCe27dC7EB494e97249e771066449157EC305F4C1',
+    weth: '0x6f39A32C3E7A54164e1C6E201979aec276B0Da8E',
+    creationBlock: 559113,
+  },
   // goerli
   [5]: {
     router: '0x3fC91A3afd70395Cd496C647d5a6CC9D4B2b7FAD',
@@ -134,7 +146,7 @@ export const WETH_ADDRESS = (chainId: number): string => {
   return CHAIN_CONFIGS[chainId].weth
 }
 
-export const PERMIT2_ADDRESS = '0x000000000022D473030F116dDEE9F6B43aC78BA3'
+export const PERMIT2_ADDRESS = '0xd6A77B342771c3fcc0CF40B441533B94D6596C7c'
 
 export const CONTRACT_BALANCE = BigNumber.from(2).pow(255)
 export const ETH_ADDRESS = '0x0000000000000000000000000000000000000000'

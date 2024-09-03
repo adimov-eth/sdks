@@ -58,7 +58,7 @@ export class Trade<TInput extends Currency, TOutput extends Currency, TTradeType
     this.routes = []
     // wrap v2 routes
     for (const { routev2, inputAmount, outputAmount } of v2Routes) {
-      const route = new RouteV2(routev2)
+      const route: IRoute<TInput, TOutput, Pair> = new RouteV2(routev2)
       this.routes.push(route)
       this.swaps.push({
         route,

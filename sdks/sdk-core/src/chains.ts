@@ -1,5 +1,7 @@
 export enum ChainId {
   MAINNET = 1,
+  STRATIS_AURORIA = 205205,
+  STRATIS = 105105,
   GOERLI = 5,
   SEPOLIA = 11155111,
   OPTIMISM = 10,
@@ -27,6 +29,8 @@ export enum ChainId {
 
 export const SUPPORTED_CHAINS = [
   ChainId.MAINNET,
+  ChainId.STRATIS_AURORIA,
+  ChainId.STRATIS,
   ChainId.OPTIMISM,
   ChainId.OPTIMISM_GOERLI,
   ChainId.OPTIMISM_SEPOLIA,
@@ -55,6 +59,7 @@ export enum NativeCurrencyName {
   // Strings match input for CLI
   ETHER = 'ETH',
   MATIC = 'MATIC',
+  STRAX = 'STRAX',
   CELO = 'CELO',
   GNOSIS = 'XDAI',
   MOONBEAM = 'GLMR',
